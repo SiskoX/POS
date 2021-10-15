@@ -20,4 +20,14 @@ export const authSuccess = token => {
    }
 }
 
-
+export const authFail = error =>{
+   return {
+     type: actionTypes.AUTH_FAIL,
+     error: error
+  }
+}
+export const authLogin = (username,password) =>{
+   return dispatch => {
+     dispath(authStart())
+  }
+}
